@@ -27,8 +27,16 @@
 </head>
 
 <body>
+  <div class="font">123</div>
   <p class="web-font">2月7日，龙岗镇组织全镇党员干部</p>
   <p>正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体正常字体</p>
+  <script>
+    document.fonts.ready.then(function () {
+      let xxx = document.querySelector(".font")
+      console.log(xxx)
+      xxx.style.display = "none"
+    });
+  </script>
 </body>
 
 </html>
